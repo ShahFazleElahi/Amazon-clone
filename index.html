@@ -4,46 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amazon Website Clone | CodingNepal</title>
+  <title>ShopWithShundori</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 </head>
 <body>
     <header>
       <nav class="navbar">
         <div class="nav-logo">
-          <a href="#"><img src="images/amazon_logo.png" alt="logo"></a>
+          <a href="#"><img src="Images/Logo/sundori-logo-white.png" alt="logo"></a>
         </div>
         <div class="address">
-          <a href="#" class="deliver">Deliver</a>
           <div class="map-icon">
             <span class="material-symbols-outlined">location_on</span>
-            <a href="#" class="location">Nepal</a>
+            <a href="#" class="location">Bagbari</a>
           </div>
         </div>
-
         <div class="nav-search">
           <select class="select-search">
             <option>All</option>
-            <option>All Categories</option>
-            <option>Amazon Devices</option>
+            <option>Makeup Items</option> 
+            <option>Skin Care</option>
+            <option>Mens products</option>
+            <option>Baby Care</option>
+            <option>Womans Clothes</option>
+            <option>Fashionable Items</option>
           </select>
-          <input type="text" placeholder="Search Amazon" class="search-input">
+          <input type="text" placeholder="Search Sundori" class="search-input">
           <div class="search-icon">
             <span class="material-symbols-outlined">search</span>
           </div>
         </div>
-
         <div class="sign-in">
-         <a href="#"> <p>Hello, sign in</p>
-          <span>Account &amp; Lists</span></a>
+         <a href="#"> <p>Sing Up / Sign in</p>
         </div>
-
-        <div class="returns">
-          <a href="#"><p>Returns</p>
-            <span>&amp; Orders</span></a>
-        </div>
-
         <div class="cart">
           <a href="#">
             <span class="material-symbols-outlined cart-icon">shopping_cart</span>
@@ -51,95 +47,429 @@
             <p>Cart</p>
         </div>
       </nav>
-      
-      <div class="banner">
-        <div class="banner-content">
-          <div class="panel">
-            <span class="material-symbols-outlined">menu</span>
-            <a href="#">All</a>
-          </div>
-  
-          <ul class="links">
-            <li><a href="#">Today's Deals</a></li>
-            <li><a href="#">Customer Service</a></li>
-            <li><a href="#">Registry</a></li>
-            <li><a href="#">Gift Cards</a></li>
-            <li><a href="#">Sell</a></li>
-          </ul>
-          <div class="deals">
-            <a href="#">Shop deals in Electronics</a>
-          </div>
-        </div>
-      </div>
     </header>
-
-    <section class="hero-section"></section>
-
-    <section class="shop-section">
-      <div class="shop-images">
-        <div class="shop-link">
-          <h3>Shop Laptops &amp; Tables</h3>
-          <img src="images/img-1.png" alt="card">
-          <a href="#">Shop now</a>
-        </div>
-        <div class="shop-link">
-          <h3>Shop Smartwatches</h3>
-          <img src="images/img-2.png" alt="card">
-          <a href="#">Shop now</a>
-        </div>
-        <div class="shop-link">
-          <h3>Create with Strip Lights</h3>
-          <img src="images/img-3.png" alt="card">
-          <a href="#">Shop now</a>
-        </div>
-        <div class="shop-link">
-          <h3>Home Refresh Ideas</h3>
-          <img src="images/img-4.png" alt="card">
-          <a href="#">Shop now</a>
+    <main>
+      <!-- slider-->
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/Slider/carousel1.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle"></a> 
+            <a href="#slide2" class="btn btn-circle"></a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/Slider/carousel10.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="Images/Slider/carousel11.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="Images/Slider/carousel2.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
         </div>
       </div>
-    </section>
+<!--category-->
+     <section style="
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+         text-align: center;
+         margin-bottom: 50px;
+         margin-top: 50px;
+         height: 200px;">
+         
+         <article class="product">
+             <img style="height: 100px;" 
+             src="Images/Categorys/11-11.png" alt="">
+             <h2 style="margin-top: 20px;">
+                 Makeup Items
+             </h2>
+             <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+             </div>
+         </article>
 
-    <footer>
-      <a href="#" class="footer-title">
-        Back to top
-      </a>
-      <div class="footer-items">
-        <ul>
-          <h3>Get to Know Us</h3>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Press Release</a></li>
-          <li><a href="#">Amazon Science</a></li>
-        </ul>
-        <ul>
-          <h3>Connect with Us</h3>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-        </ul>
-        <ul>
-          <h3>Make Money with Us</h3>
-          <li><a href="#">Sell on Amazon</a></li>
-          <li><a href="#">Sell under Amazon Accelerator</a></li>
-          <li><a href="#">Protect and Build Your Brand</a></li>
-          <li><a href="#">Amazon Global Selling</a></li>
-          <li><a href="#">Become an Affiliate</a></li>
-          <li><a href="#">Fulfillment by Amazon</a></li>
-          <li><a href="#">Advertise Your Products</a></li>
-          <li><a href="#">Amazon Pay on Merchants</a></li>
-        </ul>
-        <ul>
-          <h3>Let Us Help You</h3>
-          <li><a href="#">COVID-19 and Amazon</a></li>
-          <li><a href="#">Your Account</a></li>
-          <li><a href="#">Return Centre</a></li>
-          <li><a href="#">100% Purchase Protection</a></li>
-          <li><a href="#">Amazon App Download</a></li>
-          <li><a href="#">Help</a></li>
-        </ul>
+         <article class="product">
+             <img style="height: 100px;" 
+             src="Images/Categorys/beauty - Copy.png" alt="">
+             <h2 style="margin-top: 20px;">
+                 Makeup Items
+             </h2>
+             <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+             </div>
+         </article>
+
+         <article class="product">
+             <img style="height: 100px;" 
+             src="Images/Categorys/beauty.png" alt="">
+             <h2 style="margin-top: 20px;">
+                 Makeup Items
+             </h2>
+             <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+             </div>
+         </article>
+
+         <article class="product">
+             <img style="height: 100px;" 
+             src="Images/Categorys/home&living.png" alt="">
+             <h2 style="margin-top: 20px;">
+                 Makeup Items
+             </h2>
+             <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+             </div>
+         </article>
+
+         <article class="product">
+             <img style="height: 100px;" 
+             src="Images/Categorys/mart.png" alt="">
+             <h2 style="margin-top: 20px;">
+                 Makeup Items
+             </h2>
+             <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+             </div>
+         </article>
+
+         <article class="product">
+             <img style="height: 100px;" 
+             src="Images/Categorys/women-fashion.png" alt="">
+             <h2 style="margin-top: 20px;">
+                 Makeup Items
+             </h2>
+             <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+             </div>
+         </article>
+     </section>
+     
+<!--Happy Hour-->
+     <section style="display: flex;
+     justify-content: space-between;
+     align-items: center;
+     text-align: center;
+     margin-right: 50px;
+     margin-bottom: 20px;">
+         <div style="
+         font-size: 30px;
+         padding: 20px;
+         color:black;
+         margin-left: 70px;
+         ">Happy Hour</div>
+         <div style="
+         padding: 20px;
+         color:black;" class="flex gap-5">
+             <div>
+               <span class="countdown font-mono text-4xl">
+                 <span style="--value:15;"></span>
+               </span>
+               days
+             </div> 
+             <div>
+               <span class="countdown font-mono text-4xl">
+                 <span style="--value:10;"></span>
+               </span>
+               hours
+             </div> 
+             <div>
+               <span class="countdown font-mono text-4xl">
+                 <span style="--value:24;"></span>
+               </span>
+               min
+             </div> 
+             <div>
+               <span class="countdown font-mono text-4xl">
+                 <span style="--value:49;"></span>
+               </span>
+               sec
+             </div>
+           </div>
+     </section>
+<!--Happy Hour Productsr-->
+     <section style="display: flex;
+                     justify-content: space-evenly;
+                     align-items: center;
+                     text-align: center;">
+        <article class="product">
+             <img style="height: 250px;" 
+             src="Images/Products/100.png" alt="Product 1">
+             <h2 style="margin-top: 20px;">
+                 Product 1
+             </h2>
+             <p style="margin-top: 20px;">
+                 Lorem ipsum consectetur elit.
+             </p>
+             <span style="margin-top: 20px;" class="price">$19.99</span>
+             <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+             <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Add to Cart</button>
+             <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Buy Now</button>
+             </div>
+        </article>
+
+        <article class="product">
+              <img style="height: 250px;" 
+              src="Images/Products/100.png" alt="Product 1">
+              <h2 style="margin-top: 20px;">
+                  Product 1
+              </h2>
+              <p style="margin-top: 20px;">
+                  Lorem ipsum consectetur elit.
+              </p>
+              <span style="margin-top: 20px;" class="price">$19.99</span>
+              <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+              <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Add to Cart</button>
+              <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Buy Now</button>
+              </div>
+        </article>
+
+        <article class="product">
+                <img style="height: 250px;" 
+                src="Images/Products/100.png" alt="Product 1">
+                <h2 style="margin-top: 20px;">
+                    Product 1
+                </h2>
+                <p style="margin-top: 20px;">
+                    Lorem ipsum consectetur elit.
+                </p>
+                <span style="margin-top: 20px;" class="price">$19.99</span>
+                <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+                <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Add to Cart</button>
+                <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Buy Now</button>
+                </div>
+        </article>
+
+        <article class="product">
+                  <img style="height: 250px;" 
+                  src="Images/Products/100.png" alt="Product 1">
+                  <h2 style="margin-top: 20px;">
+                      Product 1
+                  </h2>
+                  <p style="margin-top: 20px;">
+                      Lorem ipsum consectetur elit.
+                  </p>
+                  <span style="margin-top: 20px;" class="price">$19.99</span>
+                  <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+                  <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Add to Cart</button>
+                  <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Buy Now</button>
+                  </div>
+        </article>
+     </section>
+<!--Tranding Products h/p-->
+     <section style="padding: 20px;">
+         <div style="margin-left: 70px;
+         margin-bottom:20px;
+         margin-top: 30px;">
+             <h1 style="font-size: 30px;">Tranding Products</h1>
+             <p>what others are interested in</p>
+         </div>
+         <div style="display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+         text-align: center;">
+             <article class="product">
+              <img style="height: 250px;" 
+              src="Images/Products/100.png" alt="Product 1">
+              <h2 style="margin-top: 20px;">
+                  Product 1
+              </h2>
+              <p style="margin-top: 20px;">
+                  Lorem ipsum consectetur elit.
+              </p>
+              <span style="margin-top: 20px;" class="price">$19.99</span>
+              <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+              <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Add to Cart</button>
+              <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Buy Now</button>
+              </div>
+         </article>
+         <article class="product">
+          <img style="height: 250px;" 
+          src="Images/Products/100.png" alt="Product 1">
+          <h2 style="margin-top: 20px;">
+              Product 1
+          </h2>
+          <p style="margin-top: 20px;">
+              Lorem ipsum consectetur elit.
+          </p>
+          <span style="margin-top: 20px;" class="price">$19.99</span>
+          <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+          <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Add to Cart</button>
+          <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Buy Now</button>
+          </div>
+     </article>
+     <article class="product">
+      <img style="height: 250px;" 
+      src="Images/Products/100.png" alt="Product 1">
+      <h2 style="margin-top: 20px;">
+          Product 1
+      </h2>
+      <p style="margin-top: 20px;">
+          Lorem ipsum consectetur elit.
+      </p>
+      <span style="margin-top: 20px;" class="price">$19.99</span>
+      <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+      <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Add to Cart</button>
+      <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Buy Now</button>
       </div>
-    </footer>
+ </article>
+ <article class="product">
+  <img style="height: 250px;" 
+  src="Images/Products/100.png" alt="Product 1">
+  <h2 style="margin-top: 20px;">
+      Product 1
+  </h2>
+  <p style="margin-top: 20px;">
+      Lorem ipsum consectetur elit.
+  </p>
+  <span style="margin-top: 20px;" class="price">$19.99</span>
+  <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+  <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Add to Cart</button>
+  <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Buy Now</button>
+  </div>
+</article>
+     
+         </div>
+     </section>
+<!--Products-->
+ <section style="display: flex;
+                 flex-direction: column;" class="products">
+     <div style="margin-left:70px;
+                 font-size: 30px;
+                 padding: 10px;
+                 ">
+         <h1>Products</h1>
+     </div>
+     <div style="display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     text-align: center;">
+     <article class="product">
+         <img style="height: 250px;" 
+         src="Images/Products/101.png" alt="Product 1">
+         <h2 style="margin-top: 20px;">
+             Product 1
+         </h2>
+         <p style="margin-top: 20px;">
+             Lorem ipsum consectetur elit.
+         </p>
+         <span style="margin-top: 20px;" class="price">$19.99</span>
+         <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+         <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Add to Cart</button>
+         <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Buy Now</button>
+         </div>
+     </article>
+
+     <article class="product">
+      <img style="height: 250px;" 
+      src="Images/Products/100.png" alt="Product 1">
+      <h2 style="margin-top: 20px;">
+          Product 1
+      </h2>
+      <p style="margin-top: 20px;">
+          Lorem ipsum consectetur elit.
+      </p>
+      <span style="margin-top: 20px;" class="price">$19.99</span>
+      <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+      <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Add to Cart</button>
+      <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Buy Now</button>
+      </div>
+ </article>
+
+ <article class="product">
+  <img style="height: 250px;" 
+  src="Images/Products/100.png" alt="Product 1">
+  <h2 style="margin-top: 20px;">
+      Product 1
+  </h2>
+  <p style="margin-top: 20px;">
+      Lorem ipsum consectetur elit.
+  </p>
+  <span style="margin-top: 20px;" class="price">$19.99</span>
+  <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+  <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Add to Cart</button>
+  <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Buy Now</button>
+  </div>
+</article>
+
+<article class="product">
+  <img style="height: 250px;" 
+  src="Images/Products/100.png" alt="Product 1">
+  <h2 style="margin-top: 20px;">
+      Product 1
+  </h2>
+  <p style="margin-top: 20px;">
+      Lorem ipsum consectetur elit.
+  </p>
+  <span style="margin-top: 20px;" class="price">$19.99</span>
+  <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+  <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Add to Cart</button>
+  <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Buy Now</button>
+  </div>
+</article>
+ </div>
+ </section>
+        
+<!--See More Button-->
+ </main>
+ <footer style="margin-top: 20px;">
+     <footer class="text-black bg-white footer grid-rows-1 p-10 bg-neutral text-neutral-content justify-evenly">
+         <div>
+           <span class="footer-title justify-start items-start">Payment</span> 
+           <a style="display: flex; gap: 10px;" class="link link-hover"> <img style="display: flex; height: 20px;" src="Images/Payment/cash-on-delivery.png" alt="">Cash On Delivery</a>
+           <a style="display: flex; gap: 10px;" class="link link-hover"> <img style="display: flex; height: 20px;" src="Images/Payment/Banktransfer.png" alt="">Bank Transfer</a>
+           <a style="display: flex; gap: 10px;" class="link link-hover"> <img style="display: flex; height: 20px;" src="Images/Payment/Visa.png" alt="">Visa Card</a>
+           <a style="display: flex; gap: 10px;" class="link link-hover"> <img style="display: flex; height: 20px;" src="Images/Payment/Maestro.png" alt="">Mastar Card</a>
+           <a style="display: flex; gap: 10px;" class="link link-hover"> <img style="display: flex; height: 20px;" src="Images/Payment/BKash-Logo.wine.png" alt="">BKash</a>
+           <a style="display: flex; gap: 10px;" class="link link-hover"> <img style="display: flex; height: 20px;" src="Images/Payment/Nagad-Logo.wine.png" alt="">Nagad</a>
+         </div> 
+         <div>
+           <span class="footer-title">Company</span> 
+           <a class="link link-hover">About us</a> 
+           <a class="link link-hover">Contact</a>
+         </div> 
+         <div>
+           <span class="footer-title">Legal</span> 
+           <a class="link link-hover">Terms of use</a> 
+           <a class="link link-hover">Privacy policy</a> 
+           <a class="link link-hover">Cookie policy</a>
+         </div> 
+         <div>
+           <span class="footer-title">Social</span>
+           <a style="display: flex; gap: 10px;" class="link link-hover"> <img style="display: flex; height: 20px;" src="Images/Social Media logo/Instagram.png" alt=""> Instagram</a> 
+           <a style="display: flex; gap: 10px;" class="link link-hover"> <img style="display: flex; height: 20px;" src="Images/Social Media logo/Facebook.png" alt=""> Facebook</a>
+           <a style="display: flex; gap: 10px;" class="link link-hover"> <img style="display: flex; height: 20px;" src="Images/Social Media logo/Twitter.png" alt=""> Twitter</a>
+           <a style="display: flex; gap: 10px;" class="link link-hover"> <img style="display: flex; height: 20px;" src="Images/Social Media logo/YouTube.png" alt=""> YouTube</a>
+           <a style="display: flex; gap: 10px;" class="link link-hover"> <img style="display: flex; height: 20px;" src="Images/Social Media logo/Linkedin.png" alt=""> Linkedin</a>
+          </div>
+         <div>
+           <span class="footer-title">Apps</span>
+           <a style="display: flex; gap: 10px;" class="link link-hover"> <img style="display: flex; height: 20px;" src="Images/App icon/Playstore.jpg" alt=""> iPhone</a> 
+           <a style="display: flex; gap: 10px;" class="link link-hover"> <img style="display: flex; height: 20px;" src="Images/App icon/applestore2.jpg" alt=""> Android</a>
+           <a style="display: flex; gap: 10px;" class="link link-hover"> <img style="display: flex; height: 20px;" src="Images/App icon/appgallery.png" alt=""> App Gallery</a>
+         </div>
+         
+         
+       </footer>
+     <p style="display: flex;
+               justify-content: center;
+               align-items: center;
+               text-align: center;
+               font-size: 15px;
+               margin-bottom: 20px;">
+      &copy; 2023 ShopWithShundori. All rights reserved.
+     </p>
+ </footer>
+
+    
+
+    
 
 </body>
 </html>
